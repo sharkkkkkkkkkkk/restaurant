@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+body{
+    position: relative;
+     width: 100vw;
+     height: 100vh;
+     min-width: 1100px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(30, 30, 30);
+}
+.blur{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    & .centerbox{ 
+        position: relative;
+        width: 400px;
+        height: 600px;
+        background-color: rgb(50, 50, 50);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 255, 0);
+        font-size: 30px;
+        & .order{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            & .orderid{
+            color: white;
+            
+            }
+        }
+        
+        & form .submitbutton{
+            width: 120px;
+            height: 60px;
+            margin-top: 60px;
+            color: white;
+            background-color: rgb(0, 160, 0);
+            font-size: 20px;
+            border-radius: 10px;
+            border: 0;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(0, 180, 0);
+            }
+        }
+        & img{
+            width: 60%;
+            margin-bottom: 30px;
+        }
+        & .close{
+            position: absolute;
+            width: 40px;
+            top: 5px;
+            right: -45px;
+            cursor: pointer;
+        }
+    }
+}
+.dishes{
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(160, 0, 0);
+    font-size: 50px;
+    & .dishesbox{
+        width: 600px;
+        height: 700px;
+        background-color: rgb(50, 50, 50);
+        border: 5px solid rgb(160, 0, 0);
+        border-radius: 20px;
+        overflow-y: scroll;
+        padding: 10px 0;
+        margin: 30px 0;
+        & .dishItem{
+            width: 100%;
+            height: 80px;
+            border: 2px solid rgb(80, 80, 80);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+                
+        }
+    }
+    & .sum{
+        font-size: 28px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    & .paybutton{
+        background-color: rgb(160, 0, 0);
+        border: 0;
+        width: 200px;
+        height: 60px;
+        font-size: 28px;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(180, 3, 3);
+        }
+        &:active{
+            box-shadow: inset 2px 1px 5px black;
+        }
+    }
+}   
+

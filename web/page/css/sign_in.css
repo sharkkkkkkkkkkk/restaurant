@@ -1,0 +1,138 @@
+html{
+    height: 100vh;
+    min-height: 740px;
+}
+body{
+    background: linear-gradient(limegreen,transparent),linear-gradient(90deg,skyblue,transparent),linear-gradient(-90deg,coral,transparent);
+    background-blend-mode: screen;
+    background-size:100% 120%;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+#centerbox{
+    position: relative;
+    top: 20px;
+    width: 500px;
+    height: 350px;
+    margin: 30px auto;
+    background-color:rgba(216, 216, 216, 0.6);
+    border-radius: 40px;
+    display: flex;
+    border: solid 2px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    height: 3.1em;
+}
+.righttext{
+
+    text-align: center;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    font-weight: bold;
+    background-color:rgb(254, 238, 212);
+    position: absolute;
+    width: 10em;
+    height: 3.8em;
+    display: none;
+}
+.righttext::after{
+    content: '';
+    background-color: rgb(254, 238, 212);
+    position: absolute;
+    top: 0em;
+    left: -9em;
+    height: 3.8em;
+    width: 9.1em;
+    clip-path: polygon(100% 30%,0 50%,100% 70%);
+}
+form{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+#botton{
+    position: relative;
+    top: 10px;
+    background-color: rgba(216, 216, 216, 0.1);
+    width: 8em;
+    height: 40px;
+    border: 3px solid black;
+    outline: none;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow:  2px 2px 3px black,  -2px -2px 3px black;
+}
+#botton:hover{
+    box-shadow:  1px 1px 3px black,  -1px -1px 3px black;
+}
+#botton:active{
+    font-size: 24px;
+    box-shadow: inset 1px 1px 3px black, inset -1px -1px 3px black;
+}
+
+.lefttext{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.text{
+    border-radius: 6px;
+    border: solid 1px black ;
+    font-size: 15px;
+    background-color:rgba(216, 216, 216, 0.5);
+
+}
+input[type="password"]::-ms-reveal {
+    display: none
+}
+
+.bottoma{
+    position: absolute;
+    bottom:0;
+    color: black;
+}
+.eyeimg{
+    position: relative;
+    width: 30px;
+    top: 5px;
+    left: 2px;
+
+}
+#circle{
+    position: absolute;
+    top: 5em;
+    left: 11em;
+    background-color: rgba(255, 255, 0, 0.6);
+    width: 15em;
+    height: 15em;
+    border-radius: 150px;
+    z-index: -1;
+    display:none;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(-3px,0);
+    }
+    50%{
+        transform:translate(3px,0);
+    }
+    75%{
+        transform:translate(-2px,0);
+    }
+    100%{
+        transform:none;
+    }
+}
+
+
